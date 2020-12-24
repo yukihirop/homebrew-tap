@@ -19,9 +19,7 @@ class Ultraman < Formula
   head 'https://github.com/yukihirop/ultraman.git'
 
   def install
-    if build.head?
-      system 'make', 'install_man'
-    end
+    system 'make', 'install_man'
     bin.install 'ultraman'
   end
 end
