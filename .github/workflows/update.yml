@@ -18,7 +18,7 @@ jobs:
           brew install Songmu/tap/maltmill
       - name: update & pr
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           make update
           git diff --exit-code --quiet && exit
