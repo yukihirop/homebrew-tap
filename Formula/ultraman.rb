@@ -16,7 +16,12 @@ class Ultraman < Formula
     sha256 '9123ae1fd343c1d7a1641e6c5fd8b513d901b50894a37d5977c9f11f794d2931'
   end
 
+  head 'https://github.com/yukihirop/ultraman.git'
+
   def install
+    if build.head?
+      system 'make', 'install_man'
+    end
     bin.install 'ultraman'
   end
 end
