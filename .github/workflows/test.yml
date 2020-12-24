@@ -12,7 +12,7 @@ jobs:
 
       - name: test
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         run: |
           git fetch origin master
           git diff origin/master --name-only | fgrep .rb \
