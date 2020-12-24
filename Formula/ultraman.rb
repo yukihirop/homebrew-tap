@@ -4,7 +4,7 @@ class Ultraman < Formula
   desc "Manage Procfile-based applications. (Rust Foreman)"
   homepage "https://github.com/yukihirop/ultraman"
 
-  dependes_on "rust" => :build
+  depends_on "rust" => :build
   
   if OS.mac?
     url "https://github.com/yukihirop/ultraman/releases/download/v0.1.0/ultraman-v0.1.0-x86_64-mac.zip"
@@ -17,6 +17,6 @@ class Ultraman < Formula
   end
 
   def install
-    system "cargo", "install", "--root", prefix, "--path", "."
+    bin.install 'ultraman'
   end
 end
