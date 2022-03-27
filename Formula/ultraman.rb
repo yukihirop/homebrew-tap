@@ -7,13 +7,13 @@ class Ultraman < Formula
   depends_on "rust" => :build
   
   if OS.mac?
-    url "https://github.com/yukihirop/ultraman/releases/download/v0.1.3/ultraman-v0.1.3-x86_64-mac.zip"
-    sha256 '0ee6d6f8c72de6449dae5b0602ff1b8ae7e9cb6023382e1307cdec0fc16e828b'
+    url "https://github.com/yukihirop/ultraman/releases/download/v0.2.0/ultraman-v0.2.0-x86_64-mac.zip"
+    sha256 '7b14bb1d6606d9bfbdeae878d73f3d605eaea68bb31d595107066489101aadc3'
   end
 
   if OS.linux?
-    url "https://github.com/yukihirop/ultraman/releases/download/v0.1.3/ultraman-v0.1.3-x86_64-linux.zip"
-    sha256 '933d5fa22a5b3d90632d2c674005c1555e759e8e0fd7f587220c3f9e8c749c25'
+    url "https://github.com/yukihirop/ultraman/releases/download/v0.2.0/ultraman-v0.2.0-x86_64-linux.zip"
+    sha256 'ad207bab2f6d1e38cd17527b876f8417558d003fd5f57fb5856331072193bcae'
   end
 
   head 'https://github.com/yukihirop/ultraman.git'
