@@ -1,19 +1,19 @@
 # https://qiita.com/dalance/items/b07bee6cadfd4dd19756
 class Ultraman < Formula
-  version '0.1.3'
+  version '0.3.0'
   desc "Manage Procfile-based applications. (Rust Foreman)"
   homepage "https://github.com/yukihirop/ultraman"
 
   depends_on "rust" => :build
   
   if OS.mac?
-    url "https://github.com/yukihirop/ultraman/releases/download/v0.2.0/ultraman-v0.2.0-x86_64-mac.zip"
-    sha256 '7b14bb1d6606d9bfbdeae878d73f3d605eaea68bb31d595107066489101aadc3'
+    url "https://github.com/yukihirop/ultraman/releases/download/v0.3.0/ultraman-v0.3.0-x86_64-mac.zip"
+    sha256 '5c63f1db0ae478b0283acfa94b4b56e0d37ff467303907f399b1fdc9717e940a'
   end
 
   if OS.linux?
-    url "https://github.com/yukihirop/ultraman/releases/download/v0.2.0/ultraman-v0.2.0-x86_64-linux.zip"
-    sha256 'ad207bab2f6d1e38cd17527b876f8417558d003fd5f57fb5856331072193bcae'
+    url "https://github.com/yukihirop/ultraman/releases/download/v0.3.0/ultraman-v0.3.0-x86_64-linux.zip"
+    sha256 '074d3486d2acc72259d7d8489d72c7d38a149aaabf8656f56c91140f1ccc09e5'
   end
 
   head 'https://github.com/yukihirop/ultraman.git'
